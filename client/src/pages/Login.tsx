@@ -24,6 +24,7 @@ const Login = () => {
       Auth.login(data.token);
     } catch (err) {
       console.error('Failed to login', err);
+      alert('Failed to login, incorect username or password');
     }
   };
 
